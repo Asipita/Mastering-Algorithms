@@ -1,10 +1,8 @@
 const is_prime = (entry) => {
-
-  // 2 is a prime number, hard to include into logic, so i created it's return explicitly
   if(entry <= 1) return false
   if (entry === 2) return true
 
-  max_possible_factor = Math.ceil(entry / 2)
+  max_possible_factor = Math.sqrt(entry)
 
   for (let i = 2; i <= max_possible_factor;) {
 
@@ -28,8 +26,6 @@ function sumOfPrimes(maxNum){
       total += index
     }
     index = (index === 2)?index+1:index+2
-
-    // index += 1
   }
 
   return total

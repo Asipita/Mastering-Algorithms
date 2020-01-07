@@ -4,7 +4,7 @@ const is_prime = (entry) => {
   if(entry <= 1) return false
   if (entry === 2) return true
 
-  max_possible_factor = Math.ceil(entry / 2)
+  max_possible_factor = Math.sqrt(entry)
 
   for (let i = 2; i <= max_possible_factor;) {
 
