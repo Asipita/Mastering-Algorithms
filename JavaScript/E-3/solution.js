@@ -42,7 +42,7 @@ const largestPrimeFactor = (query_num) =>{
 				factorsArray.push(i)
 			}
 			if(is_prime(max_possible_factor)){
-				factorsArray.push(max_possible_factor)
+				factorsArray.push(query_num/i)
 			}
 
 			max_possible_factor = query_num/i
